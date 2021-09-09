@@ -1,0 +1,26 @@
+import random
+
+#introduction
+print("""Hello
+Ahhh...
+I see you have some trouble deciding something in your life
+Let me solve that problem for you
+first tell me your choice
+""")
+
+#secondinputline
+Second_Line = ["Hmm I see ,What is the other : ", "Ahh what another? : ", "Interesting.. what the other : ", "Second choice? : ", "Any other? : "]
+Second_Speak = random.randint(0, 4)
+
+#get some input
+First_Decide = input("What is your first choice : ")
+Second_Decide = input(Second_Line[Second_Speak])
+
+#decide
+Ans_ = [First_Decide, Second_Decide]
+Ans_Decide = random.randint(0, 1)
+Ans = Ans_[Ans_Decide]
+Ans_Line = [f"Hmm i think you better {Ans}", f"Oh no you better {Ans} NOW", f"YOU BETTER {Ans} NOW", f"It better to {Ans}"]
+
+#doit
+print(Ans_Line[random.randint(0, 3)])
